@@ -1,0 +1,4 @@
+- 调用: dubbo
+- 注册中心: nacos
+- 链路跟踪: skywalking
+- 配置中心: apollo
