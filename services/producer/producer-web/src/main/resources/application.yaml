@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: producer-app
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+debug: true
+server:
+  port: 8082
+dubbo:
+  scan:
+    base-packages: in.hocg
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: zookeeper://127.0.0.1:2181
+    file: ${user.home}/dubbo-cache/${spring.application.name}/dubbo.cache
