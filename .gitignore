@@ -4,3 +4,4 @@ out/
 target/
 docs/
 *.iml
+/docker/nacos/example/standalone-logs/
