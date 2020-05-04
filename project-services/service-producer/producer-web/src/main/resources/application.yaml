@@ -15,5 +15,5 @@ dubbo:
     name: dubbo
     port: -1
   registry:
-    address: zookeeper://127.0.0.1:2181
+    address: ${registry.active-address}
     file: ${user.home}/dubbo-cache/${spring.application.name}/dubbo.cache

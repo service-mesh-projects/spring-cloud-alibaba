@@ -3,3 +3,18 @@ management:
     web:
       exposure:
         include: "*"
+
+# =====| 自定义配置 |=====
+registry:
+  active-address: ${registry.zookeeper.address}
+  zookeeper:
+    server: localhost
+    port: 2181
+    address: zookeeper://${registry.zookeeper.server}:${registry.zookeeper.port}
+  nacos:
+    server: localhost
+    port: 8848
+    username: nacos
+    password: nacos
+    address: nacos://${registry.nacos.server}:${registry.nacos.port}/?username=${registry.nacos.username}&password=${registry.nacos.password}
+

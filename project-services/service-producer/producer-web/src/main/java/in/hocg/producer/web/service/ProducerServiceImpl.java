@@ -10,8 +10,8 @@ import org.springframework.stereotype.Component;
  *
  * @author hocgin
  */
-@Service(version = "1.0.0")
 @Component
+@Service(version = "1.0.0")
 public class ProducerServiceImpl implements ProducerService {
     
     public String index() {
