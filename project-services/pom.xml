@@ -2,20 +2,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
     <parent>
+        <artifactId>project-parent</artifactId>
         <groupId>in.hocg.springcloud</groupId>
-        <artifactId>services</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <relativePath>../project-parent/pom.xml</relativePath>
+        <version>${revision}</version>
     </parent>
-
-    <artifactId>consumer</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>consumer-facade</module>
-        <module>consumer-web</module>
-    </modules>
     <modelVersion>4.0.0</modelVersion>
+
+    <name>Project :: Services</name>
+    <artifactId>project-services</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>service-producer</module>
+        <module>service-consumer</module>
+    </modules>
+
+    <dependencies>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
@@ -26,7 +31,17 @@
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
+                <artifactId>producer-facade</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
                 <artifactId>consumer-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>producer-web</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>
