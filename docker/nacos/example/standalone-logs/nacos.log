@@ -654,3 +654,15 @@ No DataSource set
 
 2020-05-04 17:42:09,874 INFO Completed initialization in 59 ms
 
+2020-05-04 17:57:22,542 INFO [capacityManagement] start correct usage
+
+2020-05-04 17:57:22,601 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-05-04 17:57:22,931 WARN clearConfigHistory start
+
+2020-05-04 18:13:42,776 INFO [capacityManagement] start correct usage
+
+2020-05-04 18:13:42,790 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-05-04 18:13:43,139 WARN clearConfigHistory start
+
