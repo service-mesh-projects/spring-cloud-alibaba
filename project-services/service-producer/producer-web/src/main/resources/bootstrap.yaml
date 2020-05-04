@@ -6,7 +6,7 @@ management:
 
 # =====| 自定义配置 |=====
 registry:
-  active-address: ${registry.zookeeper.address}
+  active-address: ${registry.nacos.address}
   zookeeper:
     server: localhost
     port: 2181
