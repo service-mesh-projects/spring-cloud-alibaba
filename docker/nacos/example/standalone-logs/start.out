@@ -1,0 +1,57 @@
+
+         ,--.
+       ,--.'|
+   ,--,:  : |                                           Nacos 1.2.1
+,`--.'`|  ' :                       ,---.               Running in stand alone mode, All function modules
+|   :  :  | |                      '   ,'\   .--.--.    Port: 8848
+:   |   \ | :  ,--.--.     ,---.  /   /   | /  /    '   Pid: 22
+|   : '  '; | /       \   /     \.   ; ,. :|  :  /`./   Console: http://435ed7013a1f:8848/nacos/index.html
+'   ' ;.    ;.--.  .-. | /    / ''   | |: :|  :  ;_
+|   | | \   | \__\/: . ..    ' / '   | .; : \  \    `.      https://nacos.io
+'   : |  ; .' ," .--.; |'   ; :__|   :    |  `----.   \
+|   | '`--'  /  /  ,.  |'   | '.'|\   \  /  /  /`--'  /
+'   : |     ;  :   .'   \   :    : `----'  '--'.     /
+;   |.'     |  ,     .-./\   \  /            `--'---'
+'---'        `--`---'     `----'
+
+2020-05-04 17:41:53,960 INFO Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$175476e2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2020-05-04 17:41:54,332 INFO Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2020-05-04 17:41:54,351 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4e5ed836' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2020-05-04 17:41:54,361 INFO Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$3c291994] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2020-05-04 17:41:54,376 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2020-05-04 17:41:55,698 INFO Tomcat initialized with port(s): 8848 (http)
+
+2020-05-04 17:41:56,100 INFO Root WebApplicationContext: initialization completed in 9089 ms
+
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+2020-05-04 17:42:05,816 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2020-05-04 17:42:06,576 INFO Adding welcome page: class path resource [static/index.html]
+
+2020-05-04 17:42:08,302 INFO Creating filter chain: Ant [pattern='/**'], []
+
+2020-05-04 17:42:08,393 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1922e6d, org.springframework.security.web.context.SecurityContextPersistenceFilter@29cfd92b, org.springframework.security.web.header.HeaderWriterFilter@2fab4aff, org.springframework.security.web.csrf.CsrfFilter@8a589a2, org.springframework.security.web.authentication.logout.LogoutFilter@770d4269, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7997b197, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@55f3c410, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76a82f33, org.springframework.security.web.session.SessionManagementFilter@6e46d9f4, org.springframework.security.web.access.ExceptionTranslationFilter@6b5176f2]
+
+2020-05-04 17:42:08,778 INFO Exposing 16 endpoint(s) beneath base path '/actuator'
+
+2020-05-04 17:42:08,953 INFO Initializing ExecutorService 'taskScheduler'
+
+2020-05-04 17:42:09,274 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2020-05-04 17:42:09,303 INFO Nacos logs files: /home/nacos/logs/
+
+2020-05-04 17:42:09,305 INFO Nacos conf files: /home/nacos/conf/
+
+2020-05-04 17:42:09,305 INFO Nacos data files: /home/nacos/data/
+
+2020-05-04 17:42:09,306 INFO Nacos started successfully in stand alone mode.
+
+2020-05-04 17:42:09,814 INFO Initializing Servlet 'dispatcherServlet'
+
+2020-05-04 17:42:09,874 INFO Completed initialization in 59 ms
+

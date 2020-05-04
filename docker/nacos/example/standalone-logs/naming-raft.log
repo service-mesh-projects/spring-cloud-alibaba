@@ -1,0 +1,68 @@
+2020-05-04 17:36:06,215 INFO initializing Raft sub-system
+
+2020-05-04 17:36:06,229 INFO finish loading all datums, size: 0 cost 1 ms.
+
+2020-05-04 17:36:06,229 INFO raft notifier started
+
+2020-05-04 17:36:06,230 INFO cache loaded, datum count: 0, current term: 0
+
+2020-05-04 17:36:06,230 INFO finish to load data from disk, cost: 2 ms.
+
+2020-05-04 17:36:06,256 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2020-05-04 17:36:05,601 INFO server list is updated, new: 1 servers: [{"adWeight":0,"alive":false,"ip":"4e56ee61846e","key":"4e56ee61846e:0","lastRefTime":0,"servePort":0,"site":"unknown","weight":1}]
+
+2020-05-04 17:36:06,322 INFO raft peers changed: [{"adWeight":0,"alive":false,"ip":"4e56ee61846e","key":"4e56ee61846e:0","lastRefTime":0,"lastRefTimeStr":"","servePort":0,"site":"unknown","weight":1}]
+
+2020-05-04 17:36:08,608 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2020-05-04 17:36:08,642 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2020-05-04 17:39:03,520 INFO server list is updated, new: 1 servers: [{"adWeight":0,"alive":false,"ip":"6b33ff9df072","key":"6b33ff9df072:0","lastRefTime":0,"servePort":0,"site":"unknown","weight":1}]
+
+2020-05-04 17:39:03,936 INFO initializing Raft sub-system
+
+2020-05-04 17:39:03,939 INFO finish loading all datums, size: 0 cost 0 ms.
+
+2020-05-04 17:39:03,940 INFO cache loaded, datum count: 0, current term: 0
+
+2020-05-04 17:39:03,940 INFO finish to load data from disk, cost: 1 ms.
+
+2020-05-04 17:39:03,963 INFO raft peers changed: [{"adWeight":0,"alive":false,"ip":"6b33ff9df072","key":"6b33ff9df072:0","lastRefTime":0,"lastRefTimeStr":"","servePort":0,"site":"unknown","weight":1}]
+
+2020-05-04 17:39:03,978 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2020-05-04 17:39:03,978 INFO raft notifier started
+
+2020-05-04 17:39:05,619 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2020-05-04 17:39:05,646 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2020-05-04 17:42:00,707 INFO initializing Raft sub-system
+
+2020-05-04 17:42:00,716 INFO finish loading all datums, size: 0 cost 1 ms.
+
+2020-05-04 17:42:00,717 INFO cache loaded, datum count: 0, current term: 0
+
+2020-05-04 17:42:00,717 INFO finish to load data from disk, cost: 3 ms.
+
+2020-05-04 17:42:00,721 INFO raft notifier started
+
+2020-05-04 17:42:00,091 INFO server list is updated, new: 1 servers: [{"adWeight":0,"alive":false,"ip":"435ed7013a1f","key":"435ed7013a1f:0","lastRefTime":0,"servePort":0,"site":"unknown","weight":1}]
+
+2020-05-04 17:42:00,737 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2020-05-04 17:42:00,769 INFO raft peers changed: [{"adWeight":0,"alive":false,"ip":"435ed7013a1f","key":"435ed7013a1f:0","lastRefTime":0,"lastRefTimeStr":"","servePort":0,"site":"unknown","weight":1}]
+
+2020-05-04 17:42:03,016 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2020-05-04 17:42:03,051 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2020-05-04 17:42:10,025 INFO server list is updated, new: 1 servers: [{"adWeight":0,"alive":false,"ip":"435ed7013a1f","key":"435ed7013a1f:8848","lastRefTime":0,"lastRefTimeStr":"","servePort":8848,"site":"unknown","weight":1}]
+
+2020-05-04 17:42:10,025 INFO server list is updated, dead: 1, servers: [{"adWeight":0,"alive":false,"ip":"435ed7013a1f","key":"435ed7013a1f:0","lastRefTime":0,"lastRefTimeStr":"","servePort":0,"site":"unknown","weight":1}]
+
+2020-05-04 17:42:10,028 INFO raft peers changed: [{"adWeight":0,"alive":false,"ip":"435ed7013a1f","key":"435ed7013a1f:8848","lastRefTime":0,"lastRefTimeStr":"","servePort":8848,"site":"unknown","weight":1}]
+
+2020-05-04 17:42:12,042 INFO raft peers changed: [{"adWeight":0,"alive":false,"ip":"435ed7013a1f","key":"435ed7013a1f:8848","lastRefTime":0,"lastRefTimeStr":"","servePort":8848,"site":"unknown","weight":1}]
+

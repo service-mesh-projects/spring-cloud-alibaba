@@ -1,0 +1,100 @@
+2020-05-04 17:36:00,959 ERROR [master-db] master db not found.
+
+2020-05-04 17:36:04,954 ERROR [db-error] master db  down.
+
+2020-05-04 17:36:09,626 WARN useAddressServer:true
+
+2020-05-04 17:36:09,919 WARN isQuickStart:false
+
+2020-05-04 17:36:09,977 ERROR Nacos Server did not start because dumpservice bean construction failure :
+No DataSource set
+
+2020-05-04 17:36:19,057 ERROR [master-db] master db not found.
+
+2020-05-04 17:36:22,994 ERROR [db-error] master db  down.
+
+2020-05-04 17:36:33,091 ERROR [master-db] master db not found.
+
+2020-05-04 17:36:37,054 ERROR [db-error] master db  down.
+
+2020-05-04 17:36:47,141 ERROR [master-db] master db not found.
+
+2020-05-04 17:36:51,109 ERROR [db-error] master db  down.
+
+2020-05-04 17:37:01,201 ERROR [master-db] master db not found.
+
+2020-05-04 17:37:05,123 ERROR [db-error] master db  down.
+
+2020-05-04 17:37:15,215 ERROR [master-db] master db not found.
+
+2020-05-04 17:37:19,181 ERROR [db-error] master db  down.
+
+2020-05-04 17:37:29,285 ERROR [master-db] master db not found.
+
+2020-05-04 17:37:33,196 ERROR [db-error] master db  down.
+
+2020-05-04 17:37:43,315 ERROR [master-db] master db not found.
+
+2020-05-04 17:37:47,274 ERROR [db-error] master db  down.
+
+2020-05-04 17:37:57,371 ERROR [master-db] master db not found.
+
+2020-05-04 17:38:01,327 ERROR [db-error] master db  down.
+
+2020-05-04 17:38:59,151 ERROR [master-db] master db not found.
+
+2020-05-04 17:39:03,141 ERROR [db-error] master db  down.
+
+2020-05-04 17:39:06,229 WARN useAddressServer:true
+
+2020-05-04 17:39:06,464 WARN isQuickStart:false
+
+2020-05-04 17:39:06,537 ERROR Nacos Server did not start because dumpservice bean construction failure :
+No DataSource set
+
+2020-05-04 17:39:17,229 ERROR [master-db] master db not found.
+
+2020-05-04 17:39:21,169 ERROR [db-error] master db  down.
+
+2020-05-04 17:39:31,287 ERROR [master-db] master db not found.
+
+2020-05-04 17:39:35,216 ERROR [db-error] master db  down.
+
+2020-05-04 17:39:45,307 ERROR [master-db] master db not found.
+
+2020-05-04 17:39:49,272 ERROR [db-error] master db  down.
+
+2020-05-04 17:39:59,395 ERROR [master-db] master db not found.
+
+2020-05-04 17:40:03,289 ERROR [db-error] master db  down.
+
+2020-05-04 17:40:13,421 ERROR [master-db] master db not found.
+
+2020-05-04 17:40:17,380 ERROR [db-error] master db  down.
+
+2020-05-04 17:40:27,498 ERROR [master-db] master db not found.
+
+2020-05-04 17:40:31,452 ERROR [db-error] master db  down.
+
+2020-05-04 17:40:41,512 ERROR [master-db] master db not found.
+
+2020-05-04 17:40:45,484 ERROR [db-error] master db  down.
+
+2020-05-04 17:40:55,563 ERROR [master-db] master db not found.
+
+2020-05-04 17:40:59,530 ERROR [db-error] master db  down.
+
+2020-05-04 17:41:09,617 ERROR [master-db] master db not found.
+
+2020-05-04 17:41:13,545 ERROR [db-error] master db  down.
+
+2020-05-04 17:41:23,672 ERROR [master-db] master db not found.
+
+2020-05-04 17:41:27,632 ERROR [db-error] master db  down.
+
+2020-05-04 17:41:59,475 WARN [master-db] jdbc:mysql://nacos-mysql:3306/nacos_devtest?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+
+2020-05-04 17:42:03,452 WARN useAddressServer:true
+
+2020-05-04 17:42:03,791 WARN isQuickStart:false
+
