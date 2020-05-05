@@ -6,15 +6,21 @@ management:
 
 # =====| 自定义配置 |=====
 registry:
-  active-address: ${registry.nacos.address}
-  zookeeper:
-    server: localhost
-    port: 2181
-    address: zookeeper://${registry.zookeeper.server}:${registry.zookeeper.port}
-  nacos:
-    server: localhost
-    port: 8848
-    username: nacos
-    password: nacos
-    address: nacos://${registry.nacos.server}:${registry.nacos.port}/?username=${registry.nacos.username}&password=${registry.nacos.password}
+  server-addr: ${nacos.server}:${nacos.port}
+  address: ${nacos.protocol}://${nacos.server}:${nacos.port}/?username=${nacos.username}&password=${nacos.password}
+config-server:
+  server-addr: ${nacos.server}:${nacos.port}
+
+zookeeper:
+  server: localhost
+  port: 2181
+  protocol: zookeeper
+  address: ${zookeeper.server}:${zookeeper.port}
+nacos:
+  server: localhost
+  port: 8848
+  protocol: nacos
+  username: nacos
+  password: nacos
+  address: ${nacos.server}:${nacos.port}/?username=${nacos.username}&password=${nacos.password}
 

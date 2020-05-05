@@ -5,9 +5,18 @@ spring:
     multipart:
       max-file-size: 20MB
       max-request-size: 20MB
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: tx_seata_group
+    nacos:
+      config:
+        server-addr: ${config-server.server-addr}
 debug: true
 server:
   port: 8081
+
+#============================| Dubbo |============================
 dubbo:
   scan:
     base-packages: in.hocg
@@ -15,6 +24,24 @@ dubbo:
     name: dubbo
     port: -1
   registry:
-    address: ${registry.active-address}
+    address: ${registry.address}
     file: ${user.home}/dubbo-cache/${spring.application.name}/dubbo.cache
+
+#============================| Seata |============================
+seata:
+  enabled: true
+  tx-service-group: tx_seata_group
+  enable-auto-data-source-proxy: true
+  registry:
+    type: nacos
+    nacos:
+      server-addr: nacos.localhost:8848
+      namespace:
+      cluster: default
+  config:
+    type: nacos
+    nacos:
+      server-addr: nacos.localhost:8848
+      namespace:
+      group: SEATA_GROUP
 

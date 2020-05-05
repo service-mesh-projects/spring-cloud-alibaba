@@ -1,10 +1,25 @@
 spring:
   application:
     name: producer-app
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysql.localhost:3306/db_springcloud?useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&allowPublicKeyRetrieval=true
+    username: root
+    password: hocgin
+    druid:
+      validation-query: SELECT 1
+      test-while-idle: true
   servlet:
     multipart:
       max-file-size: 20MB
       max-request-size: 20MB
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: tx_seata_group
+    nacos:
+      config:
+        server-addr: ${config-server.server-addr}
 debug: true
 server:
   port: 8082
@@ -15,5 +30,27 @@ dubbo:
     name: dubbo
     port: -1
   registry:
-    address: ${registry.active-address}
+    address: ${registry.address}
     file: ${user.home}/dubbo-cache/${spring.application.name}/dubbo.cache
+#  config-center:
+#    address: ${registry.address}
+#  metadata-report:
+#    address: ${registry.address}
+
+#============================| Seata |============================
+seata:
+  enabled: true
+  tx-service-group: tx_seata_group
+  enable-auto-data-source-proxy: true
+  registry:
+    type: nacos
+    nacos:
+      server-addr: nacos.localhost:8848
+      namespace:
+      cluster: default
+  config:
+    type: nacos
+    nacos:
+      server-addr: nacos.localhost:8848
+      namespace:
+      group: SEATA_GROUP
