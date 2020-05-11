@@ -26,6 +26,7 @@
         <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
         <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
         <seata.version>1.2.0</seata.version>
+        <mybatis-plus.version>3.3.0</mybatis-plus.version>
     </properties>
 
     <dependencies>
@@ -68,6 +69,21 @@
                 <groupId>io.seata</groupId>
                 <artifactId>seata-spring-boot-starter</artifactId>
                 <version>1.2.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>27.1-jre</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>${mybatis-plus.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

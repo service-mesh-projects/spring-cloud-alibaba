@@ -1,7 +1,6 @@
 package in.hocg.consumer.web.service;
 
 import org.apache.dubbo.config.annotation.Service;
-import org.springframework.stereotype.Component;
 
 /**
  * Created by hocgin on 2019/3/24.
@@ -10,7 +9,7 @@ import org.springframework.stereotype.Component;
  * @author hocgin
  */
 @Service(version = "1.0.0")
-@Component
+@org.springframework.stereotype.Service
 public class ConsumerServiceImpl implements ConsumerService {
     
     public String index() {

@@ -1,8 +1,6 @@
 package in.hocg.producer.web.service;
 
 import in.hocg.producer.facade.service.ProducerService;
-import org.apache.dubbo.config.annotation.Service;
-import org.springframework.stereotype.Component;
 
 /**
  * Created by hocgin on 2019/3/24.
@@ -10,8 +8,8 @@ import org.springframework.stereotype.Component;
  *
  * @author hocgin
  */
-@Component
-@Service(version = "1.0.0")
+@org.springframework.stereotype.Service
+@org.apache.dubbo.config.annotation.Service(version = "1.0.0")
 public class ProducerServiceImpl implements ProducerService {
     
     public String index() {
