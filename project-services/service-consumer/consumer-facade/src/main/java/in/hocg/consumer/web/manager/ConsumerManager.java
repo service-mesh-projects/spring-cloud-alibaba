@@ -7,7 +7,9 @@ package in.hocg.consumer.web.manager;
  * @author hocgin
  */
 public interface ConsumerManager {
-    Long saveRecord(String context);
+    Long updateRecord(Long id, String context);
+    
+    Long insertRecord(String context);
     
     String findContextById(Long id);
 }

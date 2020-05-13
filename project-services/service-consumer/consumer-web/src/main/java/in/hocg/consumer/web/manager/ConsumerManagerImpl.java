@@ -20,7 +20,16 @@ public class ConsumerManagerImpl implements ConsumerManager {
     private final ConsumerService service;
     
     @Override
-    public Long saveRecord(String context) {
+    public Long updateRecord(Long id, String context) {
+        final Consumer entity = new Consumer();
+        entity.setId(id);
+        entity.setContext(context);
+        service.validInsertOrUpdate(entity);
+        return entity.getId();
+    }
+    
+    @Override
+    public Long insertRecord(String context) {
         final Consumer entity = new Consumer();
         entity.setContext(context);
         entity.setCreatedAt(LocalDateTime.now());

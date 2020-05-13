@@ -3,6 +3,7 @@ package in.hocg.producer.web.manager;
 import in.hocg.producer.facade.manager.ProducerManager;
 import in.hocg.producer.web.entity.Producer;
 import in.hocg.producer.web.service.ProducerService;
+import io.seata.spring.annotation.GlobalTransactional;
 import lombok.RequiredArgsConstructor;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.context.annotation.Lazy;
@@ -21,7 +22,16 @@ public class ProducerManagerImpl implements ProducerManager {
     private final ProducerService producerService;
     
     @Override
-    public Long saveRecord(String context) {
+    public Long updateRecord(Long id, String context) {
+        final Producer entity = new Producer();
+        entity.setId(id);
+        entity.setContext(context);
+        producerService.validInsertOrUpdate(entity);
+        return entity.getId();
+    }
+    
+    @Override
+    public Long insertRecord(String context) {
         final Producer entity = new Producer();
         entity.setContext(context);
         entity.setCreatedAt(LocalDateTime.now());
@@ -40,4 +50,16 @@ public class ProducerManagerImpl implements ProducerManager {
         return producerService.sayHello(name);
     }
     
+    @Override
+    @GlobalTransactional
+    public Long updateRecordUseGT(Long id, String context) {
+        return this.updateRecord(id, context);
+    }
+    
+    @Override
+    @GlobalTransactional
+    public Long insertRecordForProducerIdUseGT(Long id, String append) {
+        final String context = findContextById(id);
+        return this.insertRecord(context + append);
+    }
 }

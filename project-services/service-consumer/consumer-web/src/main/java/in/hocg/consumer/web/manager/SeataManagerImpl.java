@@ -24,7 +24,7 @@ public class SeataManagerImpl implements SeataConsumer {
     
     @Override
     public Long saveProduct(String context) {
-        return producerManager.saveRecord(context);
+        return producerManager.insertRecord(context);
     }
     
 }

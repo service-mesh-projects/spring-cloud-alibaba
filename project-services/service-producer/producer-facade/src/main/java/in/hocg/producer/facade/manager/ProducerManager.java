@@ -7,9 +7,15 @@ package in.hocg.producer.facade.manager;
  * @author hocgin
  */
 public interface ProducerManager {
-    Long saveRecord(String context);
+    Long updateRecord(Long id, String context);
+    
+    Long insertRecord(String context);
     
     String findContextById(Long id);
     
     String sayHello(String name);
+    
+    Long updateRecordUseGT(Long id, String context);
+    
+    Long insertRecordForProducerIdUseGT(Long id, String append);
 }

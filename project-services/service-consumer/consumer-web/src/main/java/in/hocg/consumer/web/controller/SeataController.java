@@ -33,8 +33,23 @@ public class SeataController {
     }
     
     @GetMapping("/plan-c")
-    public Result planC() {
+    public Result planC() throws InterruptedException {
         return Result.success(service.planC("PLAN C"));
+    }
+    
+    @GetMapping("/plan-c2")
+    public Result planC2() throws InterruptedException {
+        return Result.success(service.planC2("PLAN C2"));
+    }
+    
+    @GetMapping("/plan-d")
+    public Result planD() throws InterruptedException {
+        return Result.success(service.planD());
+    }
+    
+    @GetMapping("/plan-e")
+    public Result planE() throws InterruptedException {
+        return Result.success(service.planE("PLAN E"));
     }
     
 }
