@@ -1,6 +1,6 @@
 package in.hocg.producer.web.controller;
 
-import in.hocg.producer.facade.service.ProducerService;
+import in.hocg.producer.web.service.ProducerService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Lazy;
@@ -19,11 +19,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor(onConstructor_ = {@Lazy})
 public class IndexController {
     
-    private final ProducerService producerService;
+    private final ProducerService service;
     
     @GetMapping("/worked")
     public ResponseEntity ok() {
-        return ResponseEntity.ok("Ok Producer " + producerService.sayHello("hocgin"));
+        return ResponseEntity.ok("Ok Producer " + service.sayHello("hocgin"));
     }
     
 }

@@ -23,6 +23,10 @@ spring:
 debug: true
 server:
   port: 8081
+mybatis-plus:
+  global-config:
+    banner: false
+  mapper-locations: classpath*:/**/xml/*.xml
 
 #============================| Dubbo |============================
 dubbo:
@@ -34,6 +38,8 @@ dubbo:
   registry:
     address: ${registry.address}
     file: ${user.home}/dubbo-cache/${spring.application.name}/dubbo.cache
+  consumer:
+    check: false
 
 #============================| Seata |============================
 seata:

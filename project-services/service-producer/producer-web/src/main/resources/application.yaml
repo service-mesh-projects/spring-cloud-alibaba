@@ -20,7 +20,7 @@ spring:
     nacos:
       config:
         server-addr: ${config-server.server-addr}
-debug: true
+#debug: true
 server:
   port: 8082
 dubbo:
@@ -32,10 +32,8 @@ dubbo:
   registry:
     address: ${registry.address}
     file: ${user.home}/dubbo-cache/${spring.application.name}/dubbo.cache
-#  config-center:
-#    address: ${registry.address}
-#  metadata-report:
-#    address: ${registry.address}
+  consumer:
+    check: false
 
 #============================| Seata |============================
 seata:

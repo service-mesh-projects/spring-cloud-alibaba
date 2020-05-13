@@ -1,4 +1,4 @@
-package in.hocg.consumer;
+package in.hocg.producer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,9 +10,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author hocgin
  */
 @SpringBootApplication
-public class ConsumerApplication {
+public class AppApplication {
     
     public static void main(String[] args) {
-        SpringApplication.run(ConsumerApplication.class, args);
+        SpringApplication.run(AppApplication.class, args);
     }
 }

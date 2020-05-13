@@ -4,6 +4,12 @@ management:
       exposure:
         include: "*"
 
+# =====| MyBatis Plus |=====
+mybatis-plus:
+  global-config:
+    banner: false
+  mapper-locations: classpath*:/**/xml/*.xml
+
 # =====| 自定义配置 |=====
 registry:
   server-addr:  ${nacos.server}:${nacos.port}
