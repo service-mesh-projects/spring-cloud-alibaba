@@ -1,5 +1,6 @@
 package in.hocg.consumer.web.manager;
 
+import in.hocg.producer.facade.manager.ProducerManager;
 import lombok.RequiredArgsConstructor;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.context.annotation.Lazy;
@@ -14,8 +15,16 @@ import org.springframework.context.annotation.Lazy;
 @RequiredArgsConstructor(onConstructor_ = {@Lazy})
 public class SeataManagerImpl implements SeataConsumer {
     
+    private final ProducerManager producerManager;
+    
     @Override
     public void throwException(String message) {
-        throw new RuntimeException(message);
+        throw new UnsupportedOperationException(message);
     }
+    
+    @Override
+    public Long saveProduct(String context) {
+        return producerManager.saveRecord(context);
+    }
+    
 }

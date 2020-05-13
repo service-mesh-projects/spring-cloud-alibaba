@@ -8,4 +8,6 @@ package in.hocg.consumer.web.manager;
  */
 public interface SeataConsumer {
     void throwException(String message);
+    
+    Long saveProduct(String context);
 }

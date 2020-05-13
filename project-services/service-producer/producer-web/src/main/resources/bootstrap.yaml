@@ -12,7 +12,7 @@ mybatis-plus:
 
 # =====| 自定义配置 |=====
 registry:
-  server-addr:  ${nacos.server}:${nacos.port}
+  server-addr: ${nacos.server}:${nacos.port}
   address: ${nacos.protocol}://${nacos.server}:${nacos.port}/?username=${nacos.username}&password=${nacos.password}
 config-server:
   server-addr: ${nacos.server}:${nacos.port}
