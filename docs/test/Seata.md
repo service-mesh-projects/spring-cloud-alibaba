@@ -10,7 +10,6 @@ package io.seata.core.rpc;
 package io.seata.config;
 // 注册中心
 package io.seata.discovery;
-
 ```
 
 ### 名词解释
@@ -42,7 +41,6 @@ package io.seata.discovery;
 #### 事务模式
 - AT 事务模式
 > - Automatic Transaction
-
 - TCC 事务模式
 - SAGA 事务模式
 - XA 事务模式
