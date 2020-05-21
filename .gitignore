@@ -5,3 +5,4 @@ target/
 *.iml
 /docker/nacos/example/standalone-logs/
 /docker/nacos/example/mysql/
+.flattened-pom.xml
