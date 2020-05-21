@@ -1,9 +1,9 @@
 package in.hocg.consumer.web.service.impl;
 
-import in.hocg.consumer.basic.AbstractServiceImpl;
 import in.hocg.consumer.web.entity.Consumer;
 import in.hocg.consumer.web.mapper.ConsumerMapper;
 import in.hocg.consumer.web.service.ConsumerService;
+import in.hocg.services.common.AbstractServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;

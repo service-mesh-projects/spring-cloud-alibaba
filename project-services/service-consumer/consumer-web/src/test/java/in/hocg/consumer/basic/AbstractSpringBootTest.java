@@ -21,8 +21,7 @@ import java.net.URI;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(
         classes = TestConfiguration.class,
-        webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT
-)
+        webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureMockMvc
 public abstract class AbstractSpringBootTest {
     

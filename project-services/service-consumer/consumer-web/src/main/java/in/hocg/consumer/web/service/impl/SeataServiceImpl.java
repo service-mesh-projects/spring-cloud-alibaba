@@ -1,11 +1,11 @@
 package in.hocg.consumer.web.service.impl;
 
 import in.hocg.consumer.basic.Conts;
-import in.hocg.consumer.web.manager.ConsumerManager;
-import in.hocg.consumer.web.manager.SeataConsumer;
+import in.hocg.consumer.spi.manager.ConsumerManager;
+import in.hocg.consumer.spi.manager.SeataConsumer;
 import in.hocg.consumer.web.service.SeataService;
-import in.hocg.producer.facade.manager.ProducerManager;
-import in.hocg.producer.facade.manager.SeataProducer;
+import in.hocg.producer.spi.manager.ProducerManager;
+import in.hocg.producer.spi.manager.SeataProducer;
 import io.seata.spring.annotation.GlobalTransactional;
 import lombok.RequiredArgsConstructor;
 import org.apache.dubbo.config.annotation.Reference;

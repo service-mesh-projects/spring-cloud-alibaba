@@ -10,19 +10,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <name>Project :: Services</name>
-    <artifactId>project-services</artifactId>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>service-producer</module>
-        <module>service-consumer</module>
-    </modules>
+    <artifactId>project-gateway</artifactId>
+    <name>Project :: Gateway</name>
 
     <dependencies>
         <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>service-common</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
     </dependencies>
 </project>

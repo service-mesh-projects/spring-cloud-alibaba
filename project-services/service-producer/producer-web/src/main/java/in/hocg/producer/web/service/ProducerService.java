@@ -1,7 +1,7 @@
 package in.hocg.producer.web.service;
 
-import in.hocg.producer.basic.AbstractService;
 import in.hocg.producer.web.entity.Producer;
+import in.hocg.services.common.AbstractService;
 
 /**
  * Created by hocgin on 2019/4/23.

@@ -1,5 +1,6 @@
 package in.hocg.consumer.web.manager;
 
+import in.hocg.consumer.spi.manager.ConsumerManager;
 import in.hocg.consumer.web.entity.Consumer;
 import in.hocg.consumer.web.service.ConsumerService;
 import lombok.RequiredArgsConstructor;

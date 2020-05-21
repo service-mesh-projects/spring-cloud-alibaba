@@ -9,20 +9,11 @@
         <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <name>Project :: Services</name>
-    <artifactId>project-services</artifactId>
     <packaging>pom</packaging>
 
+    <artifactId>project-commons</artifactId>
     <modules>
-        <module>service-producer</module>
-        <module>service-consumer</module>
+        <module>service-common</module>
     </modules>
 
-    <dependencies>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>service-common</artifactId>
-        </dependency>
-    </dependencies>
 </project>

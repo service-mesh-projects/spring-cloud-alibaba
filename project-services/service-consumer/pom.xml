@@ -12,7 +12,7 @@
     <packaging>pom</packaging>
     <modelVersion>4.0.0</modelVersion>
     <modules>
-        <module>consumer-facade</module>
+        <module>consumer-spi</module>
         <module>consumer-web</module>
     </modules>
 

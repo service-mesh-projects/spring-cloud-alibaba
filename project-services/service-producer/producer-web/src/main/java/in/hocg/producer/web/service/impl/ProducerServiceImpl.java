@@ -1,9 +1,9 @@
 package in.hocg.producer.web.service.impl;
 
-import in.hocg.producer.basic.AbstractServiceImpl;
 import in.hocg.producer.web.entity.Producer;
 import in.hocg.producer.web.mapper.ProducerMapper;
 import in.hocg.producer.web.service.ProducerService;
+import in.hocg.services.common.AbstractServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;

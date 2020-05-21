@@ -17,7 +17,9 @@
 
     <modules>
         <module>project-parent</module>
+        <module>project-gateway</module>
         <module>project-services</module>
+        <module>project-commons</module>
     </modules>
 
     <properties>

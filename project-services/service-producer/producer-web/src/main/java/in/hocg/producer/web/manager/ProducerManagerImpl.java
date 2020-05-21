@@ -1,6 +1,6 @@
 package in.hocg.producer.web.manager;
 
-import in.hocg.producer.facade.manager.ProducerManager;
+import in.hocg.producer.spi.manager.ProducerManager;
 import in.hocg.producer.web.entity.Producer;
 import in.hocg.producer.web.service.ProducerService;
 import io.seata.spring.annotation.GlobalTransactional;

@@ -1,6 +1,7 @@
 package in.hocg.consumer.web.manager;
 
-import in.hocg.producer.facade.manager.ProducerManager;
+import in.hocg.consumer.spi.manager.SeataConsumer;
+import in.hocg.producer.spi.manager.ProducerManager;
 import lombok.RequiredArgsConstructor;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.context.annotation.Lazy;

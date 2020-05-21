@@ -1,7 +1,7 @@
 package in.hocg.consumer.web.service;
 
-import in.hocg.consumer.basic.AbstractService;
 import in.hocg.consumer.web.entity.Consumer;
+import in.hocg.services.common.AbstractService;
 
 /**
  * Created by hocgin on 2020/5/13.

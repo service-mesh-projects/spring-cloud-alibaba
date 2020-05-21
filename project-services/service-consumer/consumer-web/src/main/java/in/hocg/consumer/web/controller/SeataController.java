@@ -1,7 +1,7 @@
 package in.hocg.consumer.web.controller;
 
-import in.hocg.consumer.basic.result.Result;
 import in.hocg.consumer.web.service.SeataService;
+import in.hocg.services.common.result.Result;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Lazy;

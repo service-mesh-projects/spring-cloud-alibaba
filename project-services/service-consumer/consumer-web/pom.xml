@@ -14,11 +14,11 @@
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>consumer-facade</artifactId>
+            <artifactId>consumer-spi</artifactId>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>producer-facade</artifactId>
+            <artifactId>producer-spi</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
