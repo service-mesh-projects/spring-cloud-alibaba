@@ -7,15 +7,12 @@
         <groupId>in.hocg.springcloud</groupId>
         <version>${revision}</version>
     </parent>
+    <name>Producer :: Web</name>
     <artifactId>producer-web</artifactId>
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
 
     <dependencies>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>service-common</artifactId>
-        </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>producer-spi</artifactId>

@@ -9,6 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <name>Consumer :: Web</name>
     <artifactId>consumer-web</artifactId>
 
     <dependencies>

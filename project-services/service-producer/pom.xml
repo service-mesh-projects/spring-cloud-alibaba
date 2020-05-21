@@ -9,6 +9,7 @@
     </parent>
 
     <artifactId>service-producer</artifactId>
+    <name>Service :: Producer</name>
     <packaging>pom</packaging>
     <modelVersion>4.0.0</modelVersion>
 
