@@ -1,6 +1,7 @@
 package in.hocg.consumer.web.controller;
 
-import in.hocg.producer.spi.manager.ProducerManager;
+import in.hocg.consumer.basic.Conts;
+import in.hocg.producer.spi.ProducerSpi;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.http.ResponseEntity;
@@ -17,8 +18,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class IndexController {
     
-    @Reference(version = "1.0.0")
-    private ProducerManager producerManager;
+    @Reference(version = Conts.DUBBO_VERSION)
+    private ProducerSpi producerManager;
     
     @GetMapping("/worked")
     public ResponseEntity ok() {

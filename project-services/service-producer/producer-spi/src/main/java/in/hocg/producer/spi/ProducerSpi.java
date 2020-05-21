@@ -1,4 +1,4 @@
-package in.hocg.producer.spi.manager;
+package in.hocg.producer.spi;
 
 /**
  * Created by hocgin on 2020/5/13.
@@ -6,7 +6,7 @@ package in.hocg.producer.spi.manager;
  *
  * @author hocgin
  */
-public interface ProducerManager {
+public interface ProducerSpi {
     Long updateRecord(Long id, String context);
     
     Long insertRecord(String context);

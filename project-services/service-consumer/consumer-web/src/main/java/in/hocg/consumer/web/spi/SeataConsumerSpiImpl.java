@@ -1,7 +1,8 @@
-package in.hocg.consumer.web.manager;
+package in.hocg.consumer.web.spi;
 
-import in.hocg.consumer.spi.manager.SeataConsumer;
-import in.hocg.producer.spi.manager.ProducerManager;
+import in.hocg.consumer.basic.Conts;
+import in.hocg.consumer.spi.SeataConsumerSpi;
+import in.hocg.producer.spi.ProducerSpi;
 import lombok.RequiredArgsConstructor;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.context.annotation.Lazy;
@@ -12,11 +13,11 @@ import org.springframework.context.annotation.Lazy;
  *
  * @author hocgin
  */
-@Service(version = "1.0.0", interfaceClass = SeataConsumer.class)
+@Service(version = Conts.DUBBO_VERSION, interfaceClass = SeataConsumerSpi.class)
 @RequiredArgsConstructor(onConstructor_ = {@Lazy})
-public class SeataManagerImpl implements SeataConsumer {
+public class SeataConsumerSpiImpl implements SeataConsumerSpi {
     
-    private final ProducerManager producerManager;
+    private final ProducerSpi producerManager;
     
     @Override
     public void throwException(String message) {

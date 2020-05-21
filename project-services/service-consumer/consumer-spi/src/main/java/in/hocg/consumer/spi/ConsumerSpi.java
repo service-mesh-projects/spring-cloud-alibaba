@@ -1,4 +1,4 @@
-package in.hocg.consumer.spi.manager;
+package in.hocg.consumer.spi;
 
 /**
  * Created by hocgin on 2020/5/13.
@@ -6,7 +6,7 @@ package in.hocg.consumer.spi.manager;
  *
  * @author hocgin
  */
-public interface ConsumerManager {
+public interface ConsumerSpi {
     Long updateRecord(Long id, String context);
     
     Long insertRecord(String context);

@@ -1,6 +1,7 @@
-package in.hocg.consumer.web.manager;
+package in.hocg.consumer.web.spi;
 
-import in.hocg.consumer.spi.manager.ConsumerManager;
+import in.hocg.consumer.basic.Conts;
+import in.hocg.consumer.spi.ConsumerSpi;
 import in.hocg.consumer.web.entity.Consumer;
 import in.hocg.consumer.web.service.ConsumerService;
 import lombok.RequiredArgsConstructor;
@@ -15,9 +16,9 @@ import java.time.LocalDateTime;
  *
  * @author hocgin
  */
-@Service(version = "1.0.0", interfaceClass = ConsumerManager.class)
+@Service(version = Conts.DUBBO_VERSION, interfaceClass = ConsumerSpi.class)
 @RequiredArgsConstructor(onConstructor_ = {@Lazy})
-public class ConsumerManagerImpl implements ConsumerManager {
+public class ConsumerSpiImpl implements ConsumerSpi {
     private final ConsumerService service;
     
     @Override

@@ -1,4 +1,4 @@
-package in.hocg.producer.spi.manager;
+package in.hocg.consumer.spi;
 
 /**
  * Created by hocgin on 2020/5/12.
@@ -6,7 +6,8 @@ package in.hocg.producer.spi.manager;
  *
  * @author hocgin
  */
-public interface SeataProducer {
-    
+public interface SeataConsumerSpi {
     void throwException(String message);
+    
+    Long saveProduct(String context);
 }

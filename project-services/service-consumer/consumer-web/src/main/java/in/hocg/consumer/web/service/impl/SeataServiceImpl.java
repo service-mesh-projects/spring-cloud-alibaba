@@ -1,11 +1,11 @@
 package in.hocg.consumer.web.service.impl;
 
 import in.hocg.consumer.basic.Conts;
-import in.hocg.consumer.spi.manager.ConsumerManager;
-import in.hocg.consumer.spi.manager.SeataConsumer;
+import in.hocg.consumer.spi.ConsumerSpi;
+import in.hocg.consumer.spi.SeataConsumerSpi;
 import in.hocg.consumer.web.service.SeataService;
-import in.hocg.producer.spi.manager.ProducerManager;
-import in.hocg.producer.spi.manager.SeataProducer;
+import in.hocg.producer.spi.ProducerSpi;
+import in.hocg.producer.spi.SeataProducerSpi;
 import io.seata.spring.annotation.GlobalTransactional;
 import lombok.RequiredArgsConstructor;
 import org.apache.dubbo.config.annotation.Reference;
@@ -27,13 +27,13 @@ import java.util.concurrent.TimeUnit;
 @RequiredArgsConstructor(onConstructor_ = {@Lazy})
 public class SeataServiceImpl implements SeataService {
     @Reference(version = Conts.DUBBO_VERSION)
-    private ProducerManager producerManager;
+    private ProducerSpi producerManager;
     @Reference(version = Conts.DUBBO_VERSION)
-    private ConsumerManager consumerManager;
+    private ConsumerSpi consumerManager;
     @Reference(version = Conts.DUBBO_VERSION)
-    private SeataConsumer seataConsumer;
+    private SeataConsumerSpi seataConsumer;
     @Reference(version = Conts.DUBBO_VERSION)
-    private SeataProducer seataProducer;
+    private SeataProducerSpi seataProducer;
     
     private final static ExecutorService EXECUTOR_SERVICE = new ThreadPoolExecutor(10, 10,
             0L, TimeUnit.MILLISECONDS,

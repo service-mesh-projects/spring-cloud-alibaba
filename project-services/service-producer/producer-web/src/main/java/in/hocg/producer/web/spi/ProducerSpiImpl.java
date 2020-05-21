@@ -1,6 +1,6 @@
-package in.hocg.producer.web.manager;
+package in.hocg.producer.web.spi;
 
-import in.hocg.producer.spi.manager.ProducerManager;
+import in.hocg.producer.spi.ProducerSpi;
 import in.hocg.producer.web.entity.Producer;
 import in.hocg.producer.web.service.ProducerService;
 import io.seata.spring.annotation.GlobalTransactional;
@@ -16,9 +16,9 @@ import java.time.LocalDateTime;
  *
  * @author hocgin
  */
-@Service(version = "1.0.0", interfaceClass = ProducerManager.class)
+@Service(version = "1.0.0", interfaceClass = ProducerSpi.class)
 @RequiredArgsConstructor(onConstructor_ = {@Lazy})
-public class ProducerManagerImpl implements ProducerManager {
+public class ProducerSpiImpl implements ProducerSpi {
     private final ProducerService producerService;
     
     @Override
