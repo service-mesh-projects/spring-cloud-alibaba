@@ -27,6 +27,7 @@
         <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
         <seata.version>1.2.0</seata.version>
         <mybatis-plus.version>3.3.0</mybatis-plus.version>
+        <shardingsphere.version>4.1.0</shardingsphere.version>
     </properties>
 
     <dependencies>
@@ -93,6 +94,11 @@
                 <version>1.1.21</version>
             </dependency>
             <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>1.1.21</version>
+            </dependency>
+            <dependency>
                 <groupId>io.seata</groupId>
                 <artifactId>seata-spring-boot-starter</artifactId>
                 <version>1.2.0</version>
@@ -121,6 +127,16 @@
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-generator</artifactId>
                 <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
+                <version>${shardingsphere.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>sharding-transaction-base-seata-at</artifactId>
+                <version>4.1.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

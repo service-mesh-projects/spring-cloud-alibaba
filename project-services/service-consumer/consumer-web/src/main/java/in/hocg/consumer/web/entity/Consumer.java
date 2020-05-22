@@ -5,8 +5,9 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import in.hocg.services.common.AbstractEntity;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * Created by hocgin on 2020/5/12.
@@ -16,11 +17,12 @@ import java.time.LocalDateTime;
  */
 @Data
 @TableName("t_consumer")
+@EqualsAndHashCode(callSuper = true)
 public class Consumer extends AbstractEntity<Consumer> {
     @TableId
     private Long id;
     @TableField(value = "context")
     private String context;
     @TableField(value = "created_at")
-    private LocalDateTime createdAt;
+    private Date createdAt;
 }

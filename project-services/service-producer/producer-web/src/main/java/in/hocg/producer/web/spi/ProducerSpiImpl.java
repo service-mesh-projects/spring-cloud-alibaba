@@ -7,8 +7,9 @@ import io.seata.spring.annotation.GlobalTransactional;
 import lombok.RequiredArgsConstructor;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.context.annotation.Lazy;
+import org.springframework.transaction.annotation.Transactional;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * Created by hocgin on 2020/5/12.
@@ -34,12 +35,13 @@ public class ProducerSpiImpl implements ProducerSpi {
     public Long insertRecord(String context) {
         final Producer entity = new Producer();
         entity.setContext(context);
-        entity.setCreatedAt(LocalDateTime.now());
+        entity.setCreatedAt(new Date());
         producerService.validInsert(entity);
         return entity.getId();
     }
     
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public String findContextById(Long id) {
         final Producer entity = producerService.getById(id);
         return entity.getContext();

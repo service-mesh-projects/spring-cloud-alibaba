@@ -8,7 +8,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * Created by hocgin on 2020/5/12.
@@ -26,5 +26,5 @@ public class Producer extends AbstractEntity<Producer> {
     @TableField(value = "context")
     private String context;
     @TableField(value = "created_at")
-    private LocalDateTime createdAt;
+    private Date createdAt;
 }

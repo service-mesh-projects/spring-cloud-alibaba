@@ -8,7 +8,7 @@ import lombok.RequiredArgsConstructor;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.context.annotation.Lazy;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * Created by hocgin on 2020/5/13.
@@ -34,7 +34,7 @@ public class ConsumerSpiImpl implements ConsumerSpi {
     public Long insertRecord(String context) {
         final Consumer entity = new Consumer();
         entity.setContext(context);
-        entity.setCreatedAt(LocalDateTime.now());
+        entity.setCreatedAt(new Date());
         service.validInsert(entity);
         return entity.getId();
     }
