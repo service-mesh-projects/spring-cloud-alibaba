@@ -1,0 +1,31 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+# =====| MyBatis Plus |=====
+mybatis-plus:
+  global-config:
+    banner: false
+  mapper-locations: classpath*:/**/xml/*.xml
+
+# =====| 自定义配置 |=====
+registry:
+  server-addr: ${nacos.server}:${nacos.port}
+  address: ${nacos.protocol}://${nacos.server}:${nacos.port}/?username=${nacos.username}&password=${nacos.password}
+config-server:
+  server-addr: ${nacos.server}:${nacos.port}
+
+zookeeper:
+  server: localhost
+  port: 2181
+  protocol: zookeeper
+  address: ${zookeeper.server}:${zookeeper.port}
+nacos:
+  server: localhost
+  port: 8848
+  protocol: nacos
+  username: nacos
+  password: nacos
+  address: ${nacos.server}:${nacos.port}/?username=${nacos.username}&password=${nacos.password}

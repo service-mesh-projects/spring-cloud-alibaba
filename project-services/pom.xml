@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>project-parent</artifactId>
+        <groupId>in.hocg.springcloud</groupId>
+        <relativePath>../project-parent/pom.xml</relativePath>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>Project :: Services</name>
+    <artifactId>project-services</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>service-producer</module>
+        <module>service-consumer</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>service-common</artifactId>
+        </dependency>
+    </dependencies>
+</project>
